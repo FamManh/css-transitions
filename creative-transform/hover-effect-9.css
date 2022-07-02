@@ -1,0 +1,48 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* perspective: 500px; */
+}
+
+a {
+  display: inline-block;
+  padding: 30px 60px;
+  font-size: 40px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 5px solid tomato;
+  position: relative;
+  transition: all 1s;
+  letter-spacing: 0px;
+  position: relative;
+  /* background-color: white; */
+  color: tomato;
+  overflow: hidden;
+
+}
+
+a:before{
+  content: "";
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: tomato;
+  position: absolute;
+  border-radius: 0 0 50% 50%;
+  z-index: -1;
+  transition: height 1s;
+}
+a:hover{
+  color: white;
+}
+a:hover:before{
+  height: 190%;
+}
