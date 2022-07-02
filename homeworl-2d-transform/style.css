@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  width: 100vh;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+img {
+  transition: transform 3s;
+  transform-origin: 200% 50%;
+}
+
+.img-2 {
+  transform: rotate(90deg);
+}
+.img-3 {
+  transform: rotate(180deg);
+}
+.img-4 {
+  transform: rotate(270deg);
+}
+
+.container:hover img {
+  transform: rotate(90deg);
+}
