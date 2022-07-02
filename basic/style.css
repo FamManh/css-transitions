@@ -1,0 +1,19 @@
+button {
+  width: 290px;
+  padding: 30px 60px;
+  background-color: blue;
+  border: 0;
+  color: white;
+  /* transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease; */
+  /* transition: all 1s ease 500ms; */
+  /* transition: background-color 1s ease, color 2s ease 1s, border-radius 1s ease-out 2s; */
+  transition: all 1s ease, border-radius 1s ease-out 1s;
+}
+
+button:hover {
+  background-color: green;
+  color: black;
+  border-radius: 50px;
+}
