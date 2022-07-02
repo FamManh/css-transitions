@@ -1,0 +1,32 @@
+body{
+  perspective: 500px;
+}
+
+img{
+  display: block;
+}
+
+.img-1{
+  margin-top: 50px;
+  margin-left: 300px;
+  transition: transform 1s;
+}
+
+.img-1:hover{
+  transform: translateZ(800px);
+}
+
+
+.img-2{
+  margin-top: 50px;
+  display: block;
+  /* margin-left: 300px; */
+  transition: transform 1s;
+}
+
+.container{
+  perspective: 500px;
+}
+.img-2:hover{
+  transform: rotateY(60deg);
+}
