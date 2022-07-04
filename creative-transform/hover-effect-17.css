@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+  /* perspective: 500px; */
+}
+h1{
+  font-size: 100px;
+  letter-spacing: 10px;
+  font-weight: 800;
+  position: relative;
+  color: #ccc;
+  /* overflow: hidden; */
+}
+
+h1:before{
+  content: "TEXT";
+  top: 0;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  position: absolute;
+  transition: all 1s;
+  color: #262626;
+
+}
+
+h1:hover:before{
+  width: 100%;
+}
